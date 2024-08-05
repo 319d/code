@@ -64,7 +64,7 @@ while True:
     if x>=window_width or x<=0 or y>=window_height or y<=0:
         break
 
-    snake.pop()
+
 
     # 检查是否吃到食物
     if new_head == food:
@@ -73,7 +73,7 @@ while True:
         score += 10  # 增加得分
     else:
         pass
-
+        snake.pop()
     snake.insert(0, new_head)  # 将新的头部添加到贪吃蛇
 
     # 渲染背景
